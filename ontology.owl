@@ -1,0 +1,991 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#advertise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#advertise">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_company"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#be_controlled -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#be_controlled">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#manages"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#be_includes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#be_includes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#host"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#be_inside -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#be_inside">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#contains"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#be_responsible -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#be_responsible">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#consist_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#consist_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Building"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#depends -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#depends">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#operate"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#University"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_company -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_company">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_enterprise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_enterprise">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_profession"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Speciality"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_job_group -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_job_group">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobGroup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_profession -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_profession">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Speciality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_project -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_project">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_skill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#has_skill">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#host -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#host">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#located_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#located_in">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#manages -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#manages">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#operate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#operate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#University"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#provides -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#provides">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Opportunity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Building_Squaremeter_Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Building_Squaremeter_Price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company_About -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company_About">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company_Email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company_Email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company_EstablishmentDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company_EstablishmentDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company_PhoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company_PhoneNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company_Website -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company_Website">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement_Contact -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement_Contact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement_Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement_Date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement_Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement_Description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement_Position -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement_Position">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobGroup_NaceCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobGroup_NaceCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobGroup"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office_Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office_Price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office_Squaremeter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office_Squaremeter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Opportunity_Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Opportunity_Description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Opportunity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person_Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person_Surname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person_Surname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person_Title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person_Title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Project_Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Project_Description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technology_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technology_Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_Address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_Address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_ApplicationFee -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_ApplicationFee">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_ApplicationForm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_ApplicationForm">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_EstablishmentDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_EstablishmentDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_LegalAdvantage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_LegalAdvantage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_RegionalAdvantage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_RegionalAdvantage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_Service -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark_Service">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Building"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#IncorporatedCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#IncorporatedCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobGroup"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#LimitedCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#LimitedCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Opportunity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Opportunity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Project"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Speciality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Speciality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technology"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#University"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#A3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#A3">
+        <consist_of rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Teknopark_İzmir"/>
+        <host rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#102"/>
+        <Building_Squaremeter_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">44.0</Building_Squaremeter_Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#A6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#A6">
+        <consist_of rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Teknopark_İzmir"/>
+        <host rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#109"/>
+        <Building_Squaremeter_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">63.0</Building_Squaremeter_Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#A9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#A9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Building"/>
+        <consist_of rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Teknopark_İzmir"/>
+        <host rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#103"/>
+        <host rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#109"/>
+        <host rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#216"/>
+        <Building_Squaremeter_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">38.0</Building_Squaremeter_Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Atık_Yönetimi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Atık_Yönetimi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Speciality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Bülent_Özdemir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Bülent_Özdemir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+        <manages rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#MİNPRO"/>
+        <Person_Name>Bülent</Person_Name>
+        <Person_Surname>Özdemir</Person_Surname>
+        <Person_Title>Patron</Person_Title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#BİLİŞİM_TEKNOLOJİLERİ_GRUBU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#BİLİŞİM_TEKNOLOJİLERİ_GRUBU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobGroup"/>
+        <JobGroup_NaceCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">62.02.01</JobGroup_NaceCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technology"/>
+        <Technology_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</Technology_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Depo_Yönetim_Sistemi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Depo_Yönetim_Sistemi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Project"/>
+        <Project_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depo süreçlerinizi etkili şekilde yöneterek maliyet ve zaman tasarrufu sağlayın, müşteri memnuniyetini artırın.</Project_Description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Ege_Üniversitesi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Ege_Üniversitesi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Fadıl_Sivri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Fadıl_Sivri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+        <manages rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Teknopark_İzmir"/>
+        <Person_Name>Fadıl</Person_Name>
+        <Person_Surname>Sivri</Person_Surname>
+        <Person_Title>Başkan Vekili</Person_Title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Java -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Java">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technology"/>
+        <Technology_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Java</Technology_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Linovi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Linovi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#IncorporatedCompany"/>
+        <advertise rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Yazılım_Mühendisi1"/>
+        <be_controlled rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Okan_Alper"/>
+        <be_inside rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Teknopark_İzmir"/>
+        <has_job_group rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#BİLİŞİM_TEKNOLOJİLERİ_GRUBU"/>
+        <has_profession rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Mobil_Uygulama"/>
+        <has_profession rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Web"/>
+        <has_profession rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Yazılım"/>
+        <located_in rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#216"/>
+        <Company_About>Linovi, yurt dışında yer alan müşterilerinin ihtiyaçlarına özel proje bazlı yazılım geliştirmektedir. Şirketimizin uzmanlık alanı, ölçeklenebilirlik ve yüksek kaliteli internet teknolojileridir.</Company_About>
+        <Company_Email>okan@linovi.com</Company_Email>
+        <Company_EstablishmentDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</Company_EstablishmentDate>
+        <Company_PhoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2323727721</Company_PhoneNumber>
+        <Company_Website>http://www.linovi.com/</Company_Website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Logo_Yazılım -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Logo_Yazılım">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#IncorporatedCompany"/>
+        <be_controlled rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Tuğrul_Tekbulut"/>
+        <be_inside rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Teknopark_İzmir"/>
+        <has_job_group rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#BİLİŞİM_TEKNOLOJİLERİ_GRUBU"/>
+        <has_profession rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Yazılım"/>
+        <has_profession rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#İş_Analitiği"/>
+        <has_project rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Depo_Yönetim_Sistemi"/>
+        <has_project rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#İnsan_Kaynakları_Yönetimi"/>
+        <located_in rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#102"/>
+        <Company_About>Kişisel bilgisayarlar için uygulama yazılımları geliştirmek üzere 1984 yılında sektöre giren Logo, Türkiye’nin en büyük yazılım kuruluşlarından biridir. Ürettiği çözüm, hizmet ve inovasyonlarla Türkiye’de yazılım sektörünün yenilikçi lideri konumuna gelmiştir. 900’ü aşkın bayisi ve yaygın dağıtım kanallarıyla sektörün en hızlı büyüyen firması olan Logo, bugün 170 bini aşkın firmada 1,3 milyonun üzerinde kullanıcıya hizmet sunuyor. Logo; Avrupa, Ortadoğu, Afrika ve Asya’da birçok ülkenin diline, iş pratiğine ve yasal mevzuatına uyarlanan ürünlerini, ilgili ülkelerdeki yetkili iş ortakları ya da tam yetkili distribütörleri aracılığıyla kullanıcılarına ulaştırıyor. Kendini “Verimlilik Şirketi” olarak tanımlayan Logo, işletmelerin çağdaş yönetim ilkelerine uygun biçimde yapılanmasını, süreçlerini uluslararası standartlar doğrultusunda yöneterek verimlilik ve kârlılığını artırmasını sağlayan çözümler üretmektedir. Farklı ölçekler için tasarlanmış kurumsal kaynak yönetimi, sektörel yazılımlar, iş zekâsı, müşteri ilişkileri yönetimi, insan kaynakları çözümleri ve e-Dönüşüm uygulamaları bu çözümlere örnek gösterilebilir.</Company_About>
+        <Company_Email>info@logo.com.tr</Company_Email>
+        <Company_EstablishmentDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1984</Company_EstablishmentDate>
+        <Company_PhoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2626798000</Company_PhoneNumber>
+        <Company_Website>www.logo.com.tr</Company_Website>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Logo_Yazılım"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#IncorporatedCompany"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#IncorporatedCompany"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#MESLEKİ_BİLİMSEL_VE_TEKNİK_FAALİYETLER_GRUBU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#MESLEKİ_BİLİMSEL_VE_TEKNİK_FAALİYETLER_GRUBU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobGroup"/>
+        <JobGroup_NaceCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">72.19.01</JobGroup_NaceCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Mobil_Uygulama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Mobil_Uygulama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Speciality"/>
+        <has_enterprise rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Linovi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#MİNPRO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#MİNPRO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#LimitedCompany"/>
+        <advertise rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Yazılım_Mühendisi"/>
+        <be_controlled rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Bülent_Özdemir"/>
+        <be_inside rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#MİNPRO"/>
+        <be_inside rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Teknopark_İzmir"/>
+        <has_job_group rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#MESLEKİ_BİLİMSEL_VE_TEKNİK_FAALİYETLER_GRUBU"/>
+        <has_profession rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Atık_Yönetimi"/>
+        <has_profession rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Proses_Modelleme_ve_Optimizasyonu"/>
+        <located_in rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#109"/>
+        <Company_About>MinPro®, İzmir Yüksek Teknoloji Enstitüsü (İYTE) Kampüsü’nde kurulu İzmir Teknoloji Geliştirme Bölgesinde (İZTEKGEB) cevher karakterizasyonu ve hazırlanması, cevherlerin fiziksel, kimyasal ve fizikokimyasal zenginleştirilmesi, çevre ve atık yönetimi ve mikron/nano boyutlarında tane teknolojisi alanlarında araştırma ve geliştirme çözümleri sunmak üzere kurulmuş bir Ar-Ge ve Danışmanlık şirketidir.</Company_About>
+        <Company_Email>info@minpro.com.tr</Company_Email>
+        <Company_EstablishmentDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</Company_EstablishmentDate>
+        <Company_PhoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2327659025</Company_PhoneNumber>
+        <Company_Website>www.minpro.com.tr</Company_Website>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Okan_Alper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Okan_Alper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+        <manages rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Linovi"/>
+        <Person_Name>Okan</Person_Name>
+        <Person_Surname>Alper</Person_Surname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Prof._Dr._Yusuf_BARAN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Prof._Dr._Yusuf_BARAN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+        <manages rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Teknopark_İzmir"/>
+        <Person_Name>Yusuf</Person_Name>
+        <Person_Surname>Baran</Person_Surname>
+        <Person_Title>Prof. Dr.</Person_Title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Proses_Modelleme_ve_Optimizasyonu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Proses_Modelleme_ve_Optimizasyonu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Speciality"/>
+        <has_enterprise rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#MİNPRO"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Teknopark_İzmir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Teknopark_İzmir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technopark"/>
+        <be_controlled rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Fadıl_Sivri"/>
+        <be_controlled rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Prof._Dr._Yusuf_BARAN"/>
+        <contains rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Linovi"/>
+        <contains rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Logo_Yazılım"/>
+        <contains rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#MİNPRO"/>
+        <depends rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#İzmir_Yüksek_Teknoloji_Enstitüsü"/>
+        <Technopark_Address>Gülbahçe Mahallesi, İzmir Teknoloji Geliştirme Bölgesi İzmir Yüksek Teknoloji Enstitüsü, 35437 Urla/İzmir</Technopark_Address>
+        <Technopark_ApplicationFee rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1416.0</Technopark_ApplicationFee>
+        <Technopark_ApplicationForm rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teknopark İzmir Yönetici Şirketi, bölgede yer almak isteyen firma ve girişimcilerin başvurularını almadan önce bir ön görüşme yapar ve projeleri hakkında bilgi alır. Bu görüşmelerde, başvurularda dikkat edilmesi gereken hususlar belirtilir, ardından firma veya girişimci Teknopark İzmir Başvuru Formunu ekinde istenilen diğer bilgilerle birlikte Teknopark İzmir yönetimine sunar.</Technopark_ApplicationForm>
+        <Technopark_EstablishmentDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</Technopark_EstablishmentDate>
+        <Technopark_LegalAdvantage>• Bölgede 6224 sayılı Yabancı Sermayeyi Teşvik Kanunu ve ilgili mevzuat hükümleri çerçevesinde yabancı uyruklu yönetici ve vasıflı AR-GE personeli çalıştırılabilir.
+
+• Kamu kurum ve kuruluşları ile üniversite/yüksek teknoloji enstitüsü personelinden Bölgede yer alan faaliyetlerde araştırmacı personel olarak hizmetine ihtiyaç duyulanlar, çalıştıkları kuruluşların izni ile sürekli veya yarı-zamanlı olarak çalıştırılabilirler.
+
+• Öğretim elemanları Üniversite / Yüksek Teknoloji Enstitüsü Yönetim Kurulunun izni ile yaptıkları araştırmaların sonuçlarını ticarileştirmek amacı ile bu bölgelerde şirket kurabilir, kurulu bir şirkete ortak olabilir ve/veya bu şirketlerin yönetiminde görev alabilirler.
+
+• Bölgede yer alan gelir ve kurumlar vergisi mükelleflerinin, münhasıran bu Bölgedeki yazılım ve AR-GE faaliyetlerinden elde ettikleri kazançları 31.12.2023 tarihine kadar gelir ve kurumlar vergisinden müstesnadır.
+
+• Bölgede çalışan araştırmacı, yazılımcı ve AR-GE personelinin bu görevleri ile ilgili ücretleri 31.12.2023 tarihine kadar her türlü vergiden müstesnadır.
+
+• 4691 sayılı Teknoloji Geliştirme Bölgeleri Kanununa göre Teknoloji Geliştirme Bölgesinde faaliyette bulunan girişimcilerin kazançlarının gelir ve kurumlar vergisinden istisna bulunduğu süre içinde münhasıran bu bölgelerde ürettikleri sistem ve veri yönetimi iş uygulamaları, sektörel, internet, mobil ve askeri komuta kontrol uygulama yazılımları teslim ve hizmetleri katma değer vergisinden müstesnadır.
+
+• 4691 sayılı Teknoloji Geliştirme Bölgeleri Kanununun sağladığı bu avantajların yanı sıra 12.03.2008 tarih ve 26814 sayılı Resmi Gazetede yayınlanarak yürürlüğe giren 5746 sayılı Araştırma ve Geliştirme Faaliyetlerinin Desteklenmesi hakkındaki kanun ile ücreti gelir vergisinden istisna olan personelin, bu kapsamdaki çalışmaları karşılığında elde ettikleri ücretleri üzerinden hesaplanan sigorta primi işveren payının yarısı 5 yıl süreyle Maliye Bakanlığı Bütçesine konulan ödenekten karşılanacaktır.</Technopark_LegalAdvantage>
+        <Technopark_RegionalAdvantage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bölgenin İYTE gibi uluslararası bir araştırma enstitüsünde yer alması, kiracılar için uluslararası bir AR-GE ortamı yaratmaktadır. Bu oluşum aynı zamanda İYTE’ nin kuruluş amacıdır.
+
+Ege ve Dokuz Eylül Üniversiteleri’nin aynı zamanda Yönetici Şirket ortağı olması, bu üniversitelerimizin teknik imkanları ile hizmet ve sosyal olanaklarından yararlanmada avantaj sağlayacaktır. Ayrıca vakıf üniversitesi olan İzmir Ekonomi Üniversitesi Bölge faaliyet alanlarındaki AR-GE çalışmalarına katkı sağlayacaktır. AR-GE çalışmalarının ana bileşenleri olan araştırmacılara ve araştırma olanaklarına yakınlık, kiracı şirketlerin ihtiyaç duyduklarında laboratuar ve kütüphane gibi mevcut olanaklardan istenildiği zaman yararlanmalarının sağlanması bölgeyi cazip kılan unsurlardır.
+
+Bölge kurulurken çevredeki düşük yoğunluktaki yapılaşmaya uyum sağlanarak doğal yapının korunmuş olması doğa ile iç içe huzurlu bir çalışma ortamı sağlamaktadır.</Technopark_RegionalAdvantage>
+        <Technopark_Service>• Laboratuvarlar
+•Kütüphaneler
+•Araştırma Merkezleri
+•Atölye
+•Konaklama
+•Kafeterya ve Restoranlar
+•Çok amaçlı eğitim ve toplantı salonları
+•Spor Tesisleri</Technopark_Service>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Tolga_Kışlal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Tolga_Kışlal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+        <be_responsible rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Yazılım_Mühendisi"/>
+        <Person_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tolga</Person_Name>
+        <Person_Surname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kışlal</Person_Surname>
+        <Person_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">İşe Alım Sorumlusu</Person_Title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Tuğrul_Tekbulut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Tuğrul_Tekbulut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+        <manages rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Logo_Yazılım"/>
+        <Person_Name>Tuğrul</Person_Name>
+        <Person_Surname>Tekbulut</Person_Surname>
+        <Person_Title>Yönetim Kurulu Başkanı</Person_Title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Web -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Web">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Speciality"/>
+        <has_enterprise rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Linovi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Yazılım -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Yazılım">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Speciality"/>
+        <has_enterprise rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Linovi"/>
+        <has_enterprise rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Logo_Yazılım"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Yazılım_Mühendisi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Yazılım_Mühendisi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement"/>
+        <has_company rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#MİNPRO"/>
+        <has_skill rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#C"/>
+        <has_skill rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Java"/>
+        <has_skill rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#C++"/>
+        <JobAnouncement_Contact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tkislal@iccore.tech</JobAnouncement_Contact>
+        <JobAnouncement_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15.05.2019</JobAnouncement_Date>
+        <JobAnouncement_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A9, 27 Nolu ofiste yer alan firmamız Akıllı Kart İşletim sistemi ve uygulamaları geliştirmektedir. Ofisimiz bünyesinde çalışacak Bilgisayar veya Elektronik mühendisliği mezunu arkadaşlarımıza ihtiyacımız olacaktır.</JobAnouncement_Description>
+        <JobAnouncement_Position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yazılım Mühendisi</JobAnouncement_Position>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Yazılım_Mühendisi1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Yazılım_Mühendisi1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#JobAnouncement"/>
+        <has_company rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Linovi"/>
+        <has_skill rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Java"/>
+        <JobAnouncement_Contact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isealim@linovi.com</JobAnouncement_Contact>
+        <JobAnouncement_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.05.2018</JobAnouncement_Date>
+        <JobAnouncement_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Üniversitelerin Bilgisayar/Yazılım Mühendisliği veya ilgili bölümlerinden mezun, 
+Kurumsal projelerde yer almış, çalışmalarını referans olarak sunabilecek, 
+En az 2 yıllık profesyonel iş deneyimine sahip arkadasları arıyoruz</JobAnouncement_Description>
+        <JobAnouncement_Position rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yazılım Mühendisi</JobAnouncement_Position>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Zeynep_Taner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Zeynep_Taner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Person"/>
+        <be_responsible rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Yazılım_Mühendisi1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#İnsan_Kaynakları_Yönetimi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#İnsan_Kaynakları_Yönetimi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Project"/>
+        <Project_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">İşe alımdan performans değerlendirmelerine, izin takibinden yan haklara kadar tüm insan kaynakları süreçlerini bir bütün halinde, tek noktadan ele almak, işletmelere iş gücü, zaman ve maliyet tasarrufu sağlıyor. Bu hedef doğrultusunda geliştirilen Logo İnsan Kaynakları Yönetimi çözümleri, İK departmanlarının tüm ihtiyaçlarını karşılıyor.</Project_Description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#İzmir_Yüksek_Teknoloji_Enstitüsü -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#İzmir_Yüksek_Teknoloji_Enstitüsü">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#University"/>
+        <operate rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Teknopark_İzmir"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#İş_Analitiği -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#İş_Analitiği">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Speciality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#102">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office"/>
+        <be_includes rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#A3"/>
+        <Office_Squaremeter rdf:datatype="http://www.w3.org/2001/XMLSchema#double">28.0</Office_Squaremeter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#103">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office"/>
+        <be_includes rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#A9"/>
+        <Office_Squaremeter rdf:datatype="http://www.w3.org/2001/XMLSchema#double">96.0</Office_Squaremeter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#109 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#109">
+        <be_includes rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#A9"/>
+        <Office_Squaremeter rdf:datatype="http://www.w3.org/2001/XMLSchema#double">96.0</Office_Squaremeter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#216 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#216">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Office"/>
+        <be_includes rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#A9"/>
+        <Office_Squaremeter rdf:datatype="http://www.w3.org/2001/XMLSchema#double">38.0</Office_Squaremeter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#C++ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#C++">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ataka/ontologies/2019/3/untitled-ontology-8#Technology"/>
+        <Technology_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C++</Technology_Name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
